@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BBDB11A151967B40065878D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BBDB119151967B40065878D /* UIKit.framework */; };
+		2BBDB11C151967B40065878D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BBDB11B151967B40065878D /* Foundation.framework */; };
+		2BBDB11E151967B40065878D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BBDB11D151967B40065878D /* CoreGraphics.framework */; };
+		2BBDB124151967B40065878D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2BBDB122151967B40065878D /* InfoPlist.strings */; };
+		2BBDB126151967B40065878D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBDB125151967B40065878D /* main.m */; };
+		2BBDB12A151967B40065878D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBDB129151967B40065878D /* AppDelegate.m */; };
+		2BBDB12D151967B40065878D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBDB12C151967B40065878D /* ViewController.m */; };
+		2BBDB130151967B40065878D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BBDB12E151967B40065878D /* ViewController.xib */; };
+		2BBDB138151967B40065878D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BBDB137151967B40065878D /* SenTestingKit.framework */; };
+		2BBDB139151967B40065878D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BBDB119151967B40065878D /* UIKit.framework */; };
+		2BBDB13A151967B40065878D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BBDB11B151967B40065878D /* Foundation.framework */; };
+		2BBDB142151967B40065878D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2BBDB140151967B40065878D /* InfoPlist.strings */; };
+		2BBDB145151967B40065878D /* EightQueensPuzzleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBDB144151967B40065878D /* EightQueensPuzzleTests.m */; };
+		2BBDB1501519681D0065878D /* SolutionsDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBDB14F1519681D0065878D /* SolutionsDataStorage.m */; };
+		2BBDB1831519730E0065878D /* EightRooksPuzzleSolution.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBDB1821519730E0065878D /* EightRooksPuzzleSolution.m */; };
+		2BBDB186151973420065878D /* EightQueensPuzzleSolution.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBDB185151973420065878D /* EightQueensPuzzleSolution.m */; };
+		2BBDB1AA151A32620065878D /* chessboard.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2BBDB1A8151A32620065878D /* chessboard.gif */; };
+		2BBDB1AB151A32620065878D /* queen.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BBDB1A9151A32620065878D /* queen.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BBDB13B151967B40065878D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BBDB10C151967B30065878D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BBDB114151967B30065878D;
+			remoteInfo = EightQueensPuzzle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2BBDB115151967B40065878D /* EightQueensPuzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EightQueensPuzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BBDB119151967B40065878D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2BBDB11B151967B40065878D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2BBDB11D151967B40065878D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2BBDB121151967B40065878D /* EightQueensPuzzle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EightQueensPuzzle-Info.plist"; sourceTree = "<group>"; };
+		2BBDB123151967B40065878D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2BBDB125151967B40065878D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2BBDB127151967B40065878D /* EightQueensPuzzle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EightQueensPuzzle-Prefix.pch"; sourceTree = "<group>"; };
+		2BBDB128151967B40065878D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2BBDB129151967B40065878D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2BBDB12B151967B40065878D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2BBDB12C151967B40065878D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2BBDB12F151967B40065878D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		2BBDB136151967B40065878D /* EightQueensPuzzleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EightQueensPuzzleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BBDB137151967B40065878D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		2BBDB13F151967B40065878D /* EightQueensPuzzleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EightQueensPuzzleTests-Info.plist"; sourceTree = "<group>"; };
+		2BBDB141151967B40065878D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2BBDB143151967B40065878D /* EightQueensPuzzleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EightQueensPuzzleTests.h; sourceTree = "<group>"; };
+		2BBDB144151967B40065878D /* EightQueensPuzzleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EightQueensPuzzleTests.m; sourceTree = "<group>"; };
+		2BBDB14E1519681D0065878D /* SolutionsDataStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolutionsDataStorage.h; sourceTree = "<group>"; };
+		2BBDB14F1519681D0065878D /* SolutionsDataStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SolutionsDataStorage.m; sourceTree = "<group>"; };
+		2BBDB1811519730E0065878D /* EightRooksPuzzleSolution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EightRooksPuzzleSolution.h; sourceTree = "<group>"; };
+		2BBDB1821519730E0065878D /* EightRooksPuzzleSolution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EightRooksPuzzleSolution.m; sourceTree = "<group>"; };
+		2BBDB184151973420065878D /* EightQueensPuzzleSolution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EightQueensPuzzleSolution.h; sourceTree = "<group>"; };
+		2BBDB185151973420065878D /* EightQueensPuzzleSolution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EightQueensPuzzleSolution.m; sourceTree = "<group>"; };
+		2BBDB1A8151A32620065878D /* chessboard.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = chessboard.gif; path = Resources/chessboard.gif; sourceTree = "<group>"; };
+		2BBDB1A9151A32620065878D /* queen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = queen.png; path = Resources/queen.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BBDB112151967B30065878D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BBDB11A151967B40065878D /* UIKit.framework in Frameworks */,
+				2BBDB11C151967B40065878D /* Foundation.framework in Frameworks */,
+				2BBDB11E151967B40065878D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BBDB132151967B40065878D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BBDB138151967B40065878D /* SenTestingKit.framework in Frameworks */,
+				2BBDB139151967B40065878D /* UIKit.framework in Frameworks */,
+				2BBDB13A151967B40065878D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BBDB10A151967B30065878D = {
+			isa = PBXGroup;
+			children = (
+				2BBDB11F151967B40065878D /* EightQueensPuzzle */,
+				2BBDB13D151967B40065878D /* EightQueensPuzzleTests */,
+				2BBDB1A6151A323D0065878D /* Assets */,
+				2BBDB118151967B40065878D /* Frameworks */,
+				2BBDB116151967B40065878D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2BBDB116151967B40065878D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BBDB115151967B40065878D /* EightQueensPuzzle.app */,
+				2BBDB136151967B40065878D /* EightQueensPuzzleTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BBDB118151967B40065878D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BBDB119151967B40065878D /* UIKit.framework */,
+				2BBDB11B151967B40065878D /* Foundation.framework */,
+				2BBDB11D151967B40065878D /* CoreGraphics.framework */,
+				2BBDB137151967B40065878D /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BBDB11F151967B40065878D /* EightQueensPuzzle */ = {
+			isa = PBXGroup;
+			children = (
+				2BBDB180151972B90065878D /* SolutionBuilder */,
+				2BBDB17F15196ACE0065878D /* SolutionsStorageSingleton */,
+				2BBDB128151967B40065878D /* AppDelegate.h */,
+				2BBDB129151967B40065878D /* AppDelegate.m */,
+				2BBDB12B151967B40065878D /* ViewController.h */,
+				2BBDB12C151967B40065878D /* ViewController.m */,
+				2BBDB12E151967B40065878D /* ViewController.xib */,
+				2BBDB120151967B40065878D /* Supporting Files */,
+			);
+			path = EightQueensPuzzle;
+			sourceTree = "<group>";
+		};
+		2BBDB120151967B40065878D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BBDB121151967B40065878D /* EightQueensPuzzle-Info.plist */,
+				2BBDB122151967B40065878D /* InfoPlist.strings */,
+				2BBDB125151967B40065878D /* main.m */,
+				2BBDB127151967B40065878D /* EightQueensPuzzle-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2BBDB13D151967B40065878D /* EightQueensPuzzleTests */ = {
+			isa = PBXGroup;
+			children = (
+				2BBDB143151967B40065878D /* EightQueensPuzzleTests.h */,
+				2BBDB144151967B40065878D /* EightQueensPuzzleTests.m */,
+				2BBDB13E151967B40065878D /* Supporting Files */,
+			);
+			path = EightQueensPuzzleTests;
+			sourceTree = "<group>";
+		};
+		2BBDB13E151967B40065878D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BBDB13F151967B40065878D /* EightQueensPuzzleTests-Info.plist */,
+				2BBDB140151967B40065878D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2BBDB17F15196ACE0065878D /* SolutionsStorageSingleton */ = {
+			isa = PBXGroup;
+			children = (
+				2BBDB14E1519681D0065878D /* SolutionsDataStorage.h */,
+				2BBDB14F1519681D0065878D /* SolutionsDataStorage.m */,
+			);
+			name = SolutionsStorageSingleton;
+			sourceTree = "<group>";
+		};
+		2BBDB180151972B90065878D /* SolutionBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				2BBDB1811519730E0065878D /* EightRooksPuzzleSolution.h */,
+				2BBDB1821519730E0065878D /* EightRooksPuzzleSolution.m */,
+				2BBDB184151973420065878D /* EightQueensPuzzleSolution.h */,
+				2BBDB185151973420065878D /* EightQueensPuzzleSolution.m */,
+			);
+			name = SolutionBuilder;
+			sourceTree = "<group>";
+		};
+		2BBDB1A6151A323D0065878D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2BBDB1A8151A32620065878D /* chessboard.gif */,
+				2BBDB1A9151A32620065878D /* queen.png */,
+			);
+			name = Assets;
+			path = EightQueensPuzzle;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BBDB114151967B30065878D /* EightQueensPuzzle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BBDB148151967B40065878D /* Build configuration list for PBXNativeTarget "EightQueensPuzzle" */;
+			buildPhases = (
+				2BBDB111151967B30065878D /* Sources */,
+				2BBDB112151967B30065878D /* Frameworks */,
+				2BBDB113151967B30065878D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EightQueensPuzzle;
+			productName = EightQueensPuzzle;
+			productReference = 2BBDB115151967B40065878D /* EightQueensPuzzle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2BBDB135151967B40065878D /* EightQueensPuzzleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BBDB14B151967B50065878D /* Build configuration list for PBXNativeTarget "EightQueensPuzzleTests" */;
+			buildPhases = (
+				2BBDB131151967B40065878D /* Sources */,
+				2BBDB132151967B40065878D /* Frameworks */,
+				2BBDB133151967B40065878D /* Resources */,
+				2BBDB134151967B40065878D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BBDB13C151967B40065878D /* PBXTargetDependency */,
+			);
+			name = EightQueensPuzzleTests;
+			productName = EightQueensPuzzleTests;
+			productReference = 2BBDB136151967B40065878D /* EightQueensPuzzleTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BBDB10C151967B30065878D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 2BBDB10F151967B30065878D /* Build configuration list for PBXProject "EightQueensPuzzle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2BBDB10A151967B30065878D;
+			productRefGroup = 2BBDB116151967B40065878D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BBDB114151967B30065878D /* EightQueensPuzzle */,
+				2BBDB135151967B40065878D /* EightQueensPuzzleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BBDB113151967B30065878D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BBDB124151967B40065878D /* InfoPlist.strings in Resources */,
+				2BBDB130151967B40065878D /* ViewController.xib in Resources */,
+				2BBDB1AA151A32620065878D /* chessboard.gif in Resources */,
+				2BBDB1AB151A32620065878D /* queen.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BBDB133151967B40065878D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BBDB142151967B40065878D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BBDB134151967B40065878D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BBDB111151967B30065878D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BBDB126151967B40065878D /* main.m in Sources */,
+				2BBDB12A151967B40065878D /* AppDelegate.m in Sources */,
+				2BBDB12D151967B40065878D /* ViewController.m in Sources */,
+				2BBDB1501519681D0065878D /* SolutionsDataStorage.m in Sources */,
+				2BBDB1831519730E0065878D /* EightRooksPuzzleSolution.m in Sources */,
+				2BBDB186151973420065878D /* EightQueensPuzzleSolution.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BBDB131151967B40065878D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BBDB145151967B40065878D /* EightQueensPuzzleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2BBDB13C151967B40065878D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BBDB114151967B30065878D /* EightQueensPuzzle */;
+			targetProxy = 2BBDB13B151967B40065878D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2BBDB122151967B40065878D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BBDB123151967B40065878D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2BBDB12E151967B40065878D /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BBDB12F151967B40065878D /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+		2BBDB140151967B40065878D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BBDB141151967B40065878D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2BBDB146151967B40065878D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2BBDB147151967B40065878D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BBDB149151967B40065878D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EightQueensPuzzle/EightQueensPuzzle-Prefix.pch";
+				INFOPLIST_FILE = "EightQueensPuzzle/EightQueensPuzzle-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2BBDB14A151967B40065878D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EightQueensPuzzle/EightQueensPuzzle-Prefix.pch";
+				INFOPLIST_FILE = "EightQueensPuzzle/EightQueensPuzzle-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2BBDB14C151967B50065878D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EightQueensPuzzle.app/EightQueensPuzzle";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EightQueensPuzzle/EightQueensPuzzle-Prefix.pch";
+				INFOPLIST_FILE = "EightQueensPuzzleTests/EightQueensPuzzleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2BBDB14D151967B50065878D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EightQueensPuzzle.app/EightQueensPuzzle";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EightQueensPuzzle/EightQueensPuzzle-Prefix.pch";
+				INFOPLIST_FILE = "EightQueensPuzzleTests/EightQueensPuzzleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BBDB10F151967B30065878D /* Build configuration list for PBXProject "EightQueensPuzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BBDB146151967B40065878D /* Debug */,
+				2BBDB147151967B40065878D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BBDB148151967B40065878D /* Build configuration list for PBXNativeTarget "EightQueensPuzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BBDB149151967B40065878D /* Debug */,
+				2BBDB14A151967B40065878D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BBDB14B151967B50065878D /* Build configuration list for PBXNativeTarget "EightQueensPuzzleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BBDB14C151967B50065878D /* Debug */,
+				2BBDB14D151967B50065878D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BBDB10C151967B30065878D /* Project object */;
+}

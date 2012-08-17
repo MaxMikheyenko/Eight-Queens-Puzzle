@@ -8,12 +8,17 @@
 
 #import "SolutionsDataStorage.h"
 #import "EightQueensPuzzleSolution.h"
+#import "Solution.h"
+#import "AppDelegate.h"
 
 //A static instance
 static SolutionsDataStorage* SolutionsDataStorageInstance = nil;
 
 
 @implementation SolutionsDataStorage
+
+@dynamic managedObjectContext;
+@synthesize numberOfSolutions;
 
 #pragma mark -
 #pragma mark Singleton Initialization
@@ -69,8 +74,9 @@ static SolutionsDataStorage* SolutionsDataStorageInstance = nil;
 -(id) init
 {
     if(self = [super init])
-    {
-        solutions = [[NSMutableArray alloc] init];
+    {        
+        numberOfSolutions = [[self findAllSolutions] count];
+        
         [EightQueensPuzzleSolution StartSolving];
     }
     return self;
@@ -79,23 +85,38 @@ static SolutionsDataStorage* SolutionsDataStorageInstance = nil;
 //Add a new solution to the storage
 -(void) AddSolution:(NSMutableArray*)_solution
 {
-    [solutions addObject:[self ConvertToChessNotation:_solution]];  
+    Solution *_newSolution = [NSEntityDescription insertNewObjectForEntityForName:@"Solution" inManagedObjectContext:self.managedObjectContext];
+    [_newSolution initWithData:[self ConvertToChessNotation:_solution] index:self.numberOfSolutions-1];
+    self.numberOfSolutions++;
+    [self.managedObjectContext save:nil];
 }
 
 //Return a solution based on the index
 -(NSMutableArray*) SolutionAtIndex:(int) index
 {
-    if(index<=[solutions count])
+    if(index<self.numberOfSolutions)
     {
-        return [solutions objectAtIndex:index];
+    NSFetchRequest *fetch = [[[NSFetchRequest alloc] initWithEntityName:@"Solution"] autorelease];
+    [fetch setPredicate:[NSPredicate predicateWithFormat:@"solutionID == %i", index]];
+    fetch.fetchLimit = 1;
+    
+        Solution *currentSolution = (Solution *)[[self.managedObjectContext executeFetchRequest:fetch error:nil] objectAtIndex:0];
+        return currentSolution.queensPositions;
     }
     return nil;
 }
 
-//Return the total number of solutions in the storage
--(int) TotalNumberOfSolutions
+//Return all solutions in the storage
+- (NSArray *)findAllSolutions
 {
-    return [solutions count];
+    NSFetchRequest *fetch = [[[NSFetchRequest alloc] initWithEntityName:@"Solution"] autorelease];
+    
+    NSArray *results = [self.managedObjectContext executeFetchRequest:fetch error:nil];
+    if(results)
+    {
+        return results;
+    }
+    return nil;
 }
 
 #pragma mark - Data Conversion Functions
@@ -145,6 +166,16 @@ static SolutionsDataStorage* SolutionsDataStorageInstance = nil;
     //Find and return the appropriate index
     return [_map objectAtIndex:_digit]; 
     
+}
+
+//local reference to managedObjectContext
+- (NSManagedObjectContext *)managedObjectContext
+{
+    if(!managedObjectContext)
+    {
+        managedObjectContext = [(AppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext];
+    }
+    return managedObjectContext;
 }
 
 @end

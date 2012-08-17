@@ -7,13 +7,16 @@
 //
 
 #import "AppDelegate.h"
-
 #import "ViewController.h"
+#import <CoreData/CoreData.h>
 
 @implementation AppDelegate
 
 @synthesize window = _window;
 @synthesize viewController = _viewController;
+@synthesize persistentStoreCoordinator;
+@synthesize managedObjectContext;
+@synthesize managedObjectModel;
 
 - (void)dealloc
 {
@@ -69,6 +72,58 @@
      Save data if appropriate.
      See also applicationDidEnterBackground:.
      */
+}
+
+#pragma mark CoreData functions
+
+- (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
+    if(persistentStoreCoordinator != nil) {
+        return persistentStoreCoordinator;
+    }
+    
+    NSString *docs = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    
+    NSURL *storeURL = [NSURL fileURLWithPath:[docs stringByAppendingPathComponent:@"eyelink.sqlite"]];
+    
+    NSError *error = nil;
+    
+    persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
+    
+    if(![persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error])
+    {
+        NSLog(@"Unresolved error %@: %@", error, [error userInfo]);
+        abort();
+    }
+    
+    return persistentStoreCoordinator;
+    
+}
+
+- (NSManagedObjectContext *) managedObjectContext {
+    if(managedObjectContext != nil) {
+        return managedObjectContext;
+    }
+    
+    NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
+    
+    if(coordinator != nil)
+    {
+        managedObjectContext = [[NSManagedObjectContext alloc] init];
+        [managedObjectContext setPersistentStoreCoordinator:coordinator];
+    }
+    
+    return managedObjectContext;
+}
+
+- (NSManagedObjectModel *)managedObjectModel {
+    if(managedObjectModel != nil)
+    {
+        return managedObjectModel;
+    }
+    
+    managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];
+    
+    return managedObjectModel;
 }
 
 @end

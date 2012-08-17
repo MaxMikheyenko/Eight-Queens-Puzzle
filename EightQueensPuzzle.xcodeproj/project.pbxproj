@@ -25,6 +25,9 @@
 		2BBDB186151973420065878D /* EightQueensPuzzleSolution.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBDB185151973420065878D /* EightQueensPuzzleSolution.m */; };
 		2BBDB1AA151A32620065878D /* chessboard.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2BBDB1A8151A32620065878D /* chessboard.gif */; };
 		2BBDB1AB151A32620065878D /* queen.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BBDB1A9151A32620065878D /* queen.png */; };
+		6A7AF6DA15363B3B00EFE947 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A7AF6D815363B3B00EFE947 /* Model.xcdatamodeld */; };
+		6A7AF6DD15363B6700EFE947 /* Solution.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7AF6DC15363B6700EFE947 /* Solution.m */; };
+		6A7AF6DF15363BAE00EFE947 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7AF6DE15363BAE00EFE947 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,10 @@
 		2BBDB185151973420065878D /* EightQueensPuzzleSolution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EightQueensPuzzleSolution.m; sourceTree = "<group>"; };
 		2BBDB1A8151A32620065878D /* chessboard.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = chessboard.gif; path = Resources/chessboard.gif; sourceTree = "<group>"; };
 		2BBDB1A9151A32620065878D /* queen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = queen.png; path = Resources/queen.png; sourceTree = "<group>"; };
+		6A7AF6D915363B3B00EFE947 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		6A7AF6DB15363B6600EFE947 /* Solution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Solution.h; path = CoreData/Solution.h; sourceTree = SOURCE_ROOT; };
+		6A7AF6DC15363B6700EFE947 /* Solution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Solution.m; path = CoreData/Solution.m; sourceTree = SOURCE_ROOT; };
+		6A7AF6DE15363BAE00EFE947 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A7AF6DF15363BAE00EFE947 /* CoreData.framework in Frameworks */,
 				2BBDB11A151967B40065878D /* UIKit.framework in Frameworks */,
 				2BBDB11C151967B40065878D /* Foundation.framework in Frameworks */,
 				2BBDB11E151967B40065878D /* CoreGraphics.framework in Frameworks */,
@@ -114,6 +122,7 @@
 		2BBDB118151967B40065878D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6A7AF6DE15363BAE00EFE947 /* CoreData.framework */,
 				2BBDB119151967B40065878D /* UIKit.framework */,
 				2BBDB11B151967B40065878D /* Foundation.framework */,
 				2BBDB11D151967B40065878D /* CoreGraphics.framework */,
@@ -125,6 +134,7 @@
 		2BBDB11F151967B40065878D /* EightQueensPuzzle */ = {
 			isa = PBXGroup;
 			children = (
+				6A7AF6D715363B2800EFE947 /* CoreData */,
 				2BBDB180151972B90065878D /* SolutionBuilder */,
 				2BBDB17F15196ACE0065878D /* SolutionsStorageSingleton */,
 				2BBDB128151967B40065878D /* AppDelegate.h */,
@@ -195,6 +205,16 @@
 			);
 			name = Assets;
 			path = EightQueensPuzzle;
+			sourceTree = "<group>";
+		};
+		6A7AF6D715363B2800EFE947 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				6A7AF6D815363B3B00EFE947 /* Model.xcdatamodeld */,
+				6A7AF6DB15363B6600EFE947 /* Solution.h */,
+				6A7AF6DC15363B6700EFE947 /* Solution.m */,
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +331,8 @@
 				2BBDB1501519681D0065878D /* SolutionsDataStorage.m in Sources */,
 				2BBDB1831519730E0065878D /* EightRooksPuzzleSolution.m in Sources */,
 				2BBDB186151973420065878D /* EightQueensPuzzleSolution.m in Sources */,
+				6A7AF6DA15363B3B00EFE947 /* Model.xcdatamodeld in Sources */,
+				6A7AF6DD15363B6700EFE947 /* Solution.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +512,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6A7AF6D815363B3B00EFE947 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6A7AF6D915363B3B00EFE947 /* Model.xcdatamodel */,
+			);
+			currentVersion = 6A7AF6D915363B3B00EFE947 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2BBDB10C151967B30065878D /* Project object */;
 }

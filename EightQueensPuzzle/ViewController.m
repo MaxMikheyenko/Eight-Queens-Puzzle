@@ -50,26 +50,6 @@
     // e.g. self.myOutlet = nil;
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-	[super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-	[super viewDidDisappear:animated];
-}
-
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
@@ -110,7 +90,7 @@
     currentSolutionIndex++;
     [self DrawSolution:[[SolutionsDataStorage sharedInstance] SolutionAtIndex:currentSolutionIndex]];
     
-    if(currentSolutionIndex==[[SolutionsDataStorage sharedInstance] TotalNumberOfSolutions]-1)
+    if(currentSolutionIndex==[[SolutionsDataStorage sharedInstance] numberOfSolutions]-1)
     {
         [NextButton setUserInteractionEnabled:NO];
     }

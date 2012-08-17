@@ -10,14 +10,17 @@
 
 @interface SolutionsDataStorage : NSObject
 {
-    NSMutableArray* solutions;
+    NSManagedObjectContext *managedObjectContext;
+    int numberOfSolutions;
 }
+
+@property (readonly, nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, assign) int numberOfSolutions;
 
 +(SolutionsDataStorage*)sharedInstance;
 
 -(void) AddSolution:(NSMutableArray*)_solution;
 -(NSMutableArray*) SolutionAtIndex:(int) index;
--(int) TotalNumberOfSolutions;
 -(NSMutableArray*) ConvertToChessNotation:(NSMutableArray*) _solution;
 -(NSString*) DigitToLetter:(int)_digit;
 -(CGPoint)ConvertChessNotationToCGPoint:(NSMutableString*)_chessNotation;
